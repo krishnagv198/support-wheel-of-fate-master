@@ -13,22 +13,25 @@ Rules
 
 ### Technology Stack
 - Java 8
-- Spring Boot 1.5.7
+- Spring Boot 
 - SpringFramework Cloud
 - H2 Database 1.4.x/ later use other DB also
 - AWS Lambda 
 
 ### Application
-Application structure is based on Controller -> Service -> Repository pattern. An in-memory database is used and sample data is preloaded from 'data.sql' file in classpath on application start.
+Application structure is based on Controller -> Service -> Repository pattern( Spring stereotypes). 
+An in-memory database is used and sample data is preloaded from 'data.sql' file in classpath on application start.
 
 ### UI View
-A simple web page with Bootstrap and jQuery is used to call the REST API and display the return data. Spring thymeleaf is used for server-side rendering of the page. 
+A simple web page with Bootstrap and jQuery is used to call the REST API and display the return data. 
+Spring thymeleaf is used for server-side rendering of the page. 
 
 ### Cloud
 Spring Cloud Function is used to support serverless providers. Only AWS Lambda handler is implemented in this project.
 
 
 
+(As local code dumped, build and deploy, then access your local host with the rest uri for the specific service)
 
 ## REST API
 
@@ -40,7 +43,7 @@ Request Header
 Request Body  
 	Parameter Name: startDate    
 	Possible value: Date in format 'yyyy-MM-dd'    
-	Example: startDate=2018-03-26  
+	Example: startDate=2018-04-27  
   
 Response Header  
 	Content-Type: application/json  
