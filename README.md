@@ -52,10 +52,10 @@ Response Body
 Maven is used for dependencies and project build.
 
 To build the project run following maven command   
-`mvn clean package`  
+`mvn clean package`  / you use IDE steps 
 
 Exceute following command to run the application  
-`mvn spring-boot:run`  
+`mvn spring-boot:run`  / you can use IDE with boot apllication class
 
 Open the following URL in browser  
 `localhost:8081/`  
