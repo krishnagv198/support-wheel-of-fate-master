@@ -22,6 +22,8 @@ Rules
 Application structure is based on Controller -> Service -> Repository pattern( Spring stereotypes). 
 An in-memory database is used and sample data is preloaded from 'data.sql' file in classpath on application start.
 
+Note : i have not used lombok as a plug-in for setters/getters . If you have any flexibility to use them, can you lombok (1.18.0 version).
+
 ### UI View
 A simple web page with Bootstrap and jQuery is used to call the REST API and display the return data. 
 Spring thymeleaf is used for server-side rendering of the page. 
