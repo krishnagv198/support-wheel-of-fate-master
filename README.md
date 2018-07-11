@@ -7,7 +7,7 @@ Rules
 - An engineer cannot have half day shifts on consecutive days.
 - Each engineer should have completed one whole day of support in any 2 week period.
 
-Application demo link: http://45.76.152.208:8082/
+
 
 ## Description
 
@@ -15,8 +15,8 @@ Application demo link: http://45.76.152.208:8082/
 - Java 8
 - Spring Boot 1.5.7
 - SpringFramework Cloud
-- H2 Database 1.4.x
-- AWS Lambda
+- H2 Database 1.4.x/ later use other DB also
+- AWS Lambda 
 
 ### Application
 Application structure is based on Controller -> Service -> Repository pattern. An in-memory database is used and sample data is preloaded from 'data.sql' file in classpath on application start.
@@ -28,7 +28,7 @@ A simple web page with Bootstrap and jQuery is used to call the REST API and dis
 Spring Cloud Function is used to support serverless providers. Only AWS Lambda handler is implemented in this project.
 
 
-Note: Lombok Project is used for POJO classes. For IDE setup follow https://projectlombok.org/setup/overview
+
 
 ## REST API
 
@@ -73,10 +73,11 @@ Request:
 	Content-Type: application/json  
 	Body:  
 		{  
-			"startDate":"2018-03-26"  
+			"startDate":"2018-04-27"  
 		}  
 Response:  
 	Content-Type: application/json  
 	Body: Schedule object  
 
 	
+	Note : might be occured any build issues in local, get the maven repository fixed suucessfully with all required Jars/artifact ids.
